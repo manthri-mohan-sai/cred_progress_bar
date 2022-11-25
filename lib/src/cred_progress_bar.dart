@@ -116,7 +116,7 @@ class _CredProgressBarState extends State<CredProgressBar> {
     setState(() {});
   }
 
-  Widget _mainSliderBar() {
+  Widget _backgroundProgressBar() {
     return Container(
       width: _barWidth,
       height: widget.barHeight,
@@ -127,7 +127,7 @@ class _CredProgressBarState extends State<CredProgressBar> {
     );
   }
 
-  Widget _nesterSliderBar({
+  Widget _childProgressBar({
     required double thumbPos,
     required double barWidth,
     required Color barColor,
@@ -169,18 +169,18 @@ class _CredProgressBarState extends State<CredProgressBar> {
         borderRadius: _barBorderRadius,
         child: Stack(
           children: [
-            _mainSliderBar(),
-            _nesterSliderBar(
+            _backgroundProgressBar(),
+            _childProgressBar(
               thumbPos: _bar1Position,
               barWidth: _bar1Width,
               barColor: widget.barColor.withOpacity(0.4),
             ),
-            _nesterSliderBar(
+            _childProgressBar(
               thumbPos: _bar2Position,
               barWidth: _bar2Width,
               barColor: widget.barColor.withOpacity(0.6),
             ),
-            _nesterSliderBar(
+            _childProgressBar(
               thumbPos: _bar3Position,
               barWidth: _bar3Width,
               barColor: widget.barColor.withOpacity(0.8),

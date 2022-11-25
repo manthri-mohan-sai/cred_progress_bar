@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(height: kToolbarHeight),
+            // Regular list view with cred progress bar
             SizedBox(
               height: 256,
               child: ListView.builder(
@@ -105,6 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
+            /// Bigger cred progress bar for showcase
             const SizedBox(height: kToolbarHeight),
             SizedBox(
               height: 256,

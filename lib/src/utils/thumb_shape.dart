@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Diamond shape painter
 class ThumbShapePainter extends CustomPainter {
   ThumbShapePainter({required this.color});
 

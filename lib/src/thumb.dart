@@ -1,6 +1,7 @@
 import 'package:cred_progress_bar/src/utils/thumb_shape.dart';
 import 'package:flutter/material.dart';
 
+/// Diamond thumb widget - which rotates on scroll
 class CredThumb extends StatelessWidget {
   const CredThumb({
     Key? key,
